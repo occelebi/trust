@@ -1,0 +1,21 @@
+version: '3'
+
+vars:
+  image: public.ecr.aws/l1y5t2n8/kata
+
+tasks:
+
+  build:
+   desc: "build the compiled binary"
+   cmds:
+     - go build
+
+  docker-build:
+   desc: "build container image"
+   cmds:
+     - docker build -t {{.image}} .
+
+  docker-push:
+   desc: "push the image"
+   cmds:
+     - docker push {{.image}}
