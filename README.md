@@ -8,6 +8,7 @@ For instance, given the input string 'aliopa', the result will be 1 given that o
 I used AWS apprunner to offload as much as possible to managed service. AWS apprunner looked very promising as it provides all features we need like high performance, availability, scalability, and security. They successfully managed to abstract developers away from infrastructure related topic. I liked it.
 
 App is written in golang, terraform for IaC and Taskfile for build tool.
+
 ---
 # Solution
 ## Test locally
